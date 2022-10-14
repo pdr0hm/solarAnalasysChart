@@ -1,4 +1,4 @@
-export const Header = () => {
+export function Header() {
   return (
     <header className="w-full h-36 flex">
       <img
@@ -14,4 +14,4 @@ export const Header = () => {
       </div>
     </header>
   );
-};
+}

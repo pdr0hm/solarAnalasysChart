@@ -2,9 +2,7 @@ import { Line } from "react-chartjs-2";
 import { useEffect, useState } from "react";
 import Chart from "chart.js/auto";
 
-export const ChartLine = ({ data, typeChart }) => {
-  console.log("data", data);
-  console.log("TIPOCHART", typeChart);
+export function ChartLine({ data, typeChart }) {
   const [hour, setHour] = useState([]);
   const [date, setDate] = useState([]);
   const [radiance, setRadiance] = useState([]);
@@ -75,4 +73,4 @@ export const ChartLine = ({ data, typeChart }) => {
       ) : null}
     </>
   );
-};
+}
