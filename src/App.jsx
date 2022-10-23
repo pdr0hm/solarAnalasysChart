@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { CsvUploader } from "./components/CsvUploader";
-import { TableData } from "./components/TableData";
-import { ChartLine } from "./components/ChartLine";
-import { Header } from "./components/Header";
+import  CsvUploader  from "./components/CsvUploader";
+import TableData  from "./components/TableData";
+import  ChartLine  from "./components/ChartLine";
+import Header  from "./components/Header";
 
 function App() {
   const [parsedData, setParsedData] = useState([]);

@@ -1,4 +1,4 @@
-export function Header() {
+export default function Header() {
   return (
     <header className="w-full h-36 flex">
       <img

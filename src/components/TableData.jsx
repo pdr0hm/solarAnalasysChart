@@ -1,7 +1,7 @@
 import { useTable } from "react-table";
 import TableScrollbar from "react-table-scrollbar";
 
-export function TableData({ parsedData, columns, values }) {
+export default function TableData({ parsedData, columns, values }) {
   return (
     <>
       {parsedData.length > 0 ? (

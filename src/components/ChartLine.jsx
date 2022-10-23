@@ -2,7 +2,7 @@ import { Line } from "react-chartjs-2";
 import { useEffect, useState } from "react";
 import Chart from "chart.js/auto";
 
-export function ChartLine({ data, typeChart }) {
+export default function ChartLine({ data, typeChart }) {
   const [hour, setHour] = useState([]);
   const [date, setDate] = useState([]);
   const [radiance, setRadiance] = useState([]);

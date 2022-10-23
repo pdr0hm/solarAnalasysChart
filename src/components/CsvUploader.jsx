@@ -1,7 +1,7 @@
 import Papa from "papaparse";
 import { useState } from "react";
 
-export function CsvUploader({ setParsedData, setColumns, setValues }) {
+export default function CsvUploader({ setParsedData, setColumns, setValues }) {
   const changeHandler = (e) => {
     Papa.parse(e.target.files[0], {
       header: true,
