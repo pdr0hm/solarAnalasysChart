@@ -9,6 +9,8 @@ function App() {
   const [columns, setColumns] = useState([]);
   const [values, setValues] = useState([]);
 
+  console.log("columns", columns);
+
   return (
     <div className="bg-zinc-200 w-screen h-screen">
       <Header />
@@ -19,11 +21,11 @@ function App() {
             setColumns={setColumns}
             setValues={setValues}
           />
-          {/*<TableData
+          <TableData
             parsedData={parsedData}
             columns={columns}
             values={values}
-  />*/}
+          />
         </div>
         <div className="flex-col w-full">
           <ChartLine data={parsedData} typeChart={"radiance"} />
