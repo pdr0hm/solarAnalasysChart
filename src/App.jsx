@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import  CsvUploader  from "./components/CsvUploader";
-import TableData  from "./components/TableData";
-import  ChartLine  from "./components/ChartLine";
-import Header  from "./components/Header";
+import CsvUploader from "./components/CsvUploader";
+import TableData from "./components/TableData";
+import ChartLine from "./components/ChartLine";
+import Header from "./components/Header";
 
 function App() {
   const [parsedData, setParsedData] = useState([]);
@@ -19,15 +19,17 @@ function App() {
             setColumns={setColumns}
             setValues={setValues}
           />
-          <TableData
+          {/*<TableData
             parsedData={parsedData}
             columns={columns}
             values={values}
-          />
+  />*/}
         </div>
         <div className="flex-col w-full">
+          {/*
           <ChartLine data={parsedData} typeChart={"radiance"} />
           <ChartLine data={parsedData} typeCHart={"voltage"} />
+          */}
         </div>
       </div>
     </div>
