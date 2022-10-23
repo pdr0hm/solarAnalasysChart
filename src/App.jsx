@@ -19,11 +19,11 @@ function App() {
             setColumns={setColumns}
             setValues={setValues}
           />
-          {/*<TableData
+          <TableData
             parsedData={parsedData}
             columns={columns}
             values={values}
-  />*/}
+          />
         </div>
         <div className="flex-col w-full">
           {/*

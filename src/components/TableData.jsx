@@ -1,7 +1,6 @@
 import React from "react";
 import TableScrollbar from "react-table-scrollbar";
 
-
 export default function TableData({ parsedData, columns, values }) {
   return (
     <>
@@ -47,7 +46,9 @@ export default function TableData({ parsedData, columns, values }) {
             </TableScrollbar>
           </div>
         </div>
-      ) : null}
+      ) : (
+        <> </>
+      )}
     </>
   );
 }
