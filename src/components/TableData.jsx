@@ -5,7 +5,7 @@ export default function TableData({ parsedData, columns, values }) {
   return (
     <>
       {parsedData.length > 0 && (
-        /* <div className="flex flex-col bg-zinc-100 rounded-sm ml-6">
+        <div className="flex flex-col bg-zinc-100 rounded-sm ml-6">
           <div className="overflow-hidden rounded-sm">
             <TableScrollbar rows={25}>
               <table className="border-collapse text-sm font-sans shadow-md">
@@ -46,8 +46,6 @@ export default function TableData({ parsedData, columns, values }) {
             </TableScrollbar>
           </div>
         </div>
-     */
-        <h1>TABELA</h1>
       )}
     </>
   );
