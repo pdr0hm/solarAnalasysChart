@@ -1,5 +1,5 @@
 import { Line } from "react-chartjs-2";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Chart from "chart.js/auto";
 
 export default function ChartLine({ data, typeChart }) {

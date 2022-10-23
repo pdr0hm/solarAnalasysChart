@@ -1,5 +1,5 @@
 import Papa from "papaparse";
-import { useState } from "react";
+import React from "react";
 
 export default function CsvUploader({ setParsedData, setColumns, setValues }) {
   const changeHandler = (e) => {
