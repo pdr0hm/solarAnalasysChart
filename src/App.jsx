@@ -9,8 +9,6 @@ function App() {
   const [columns, setColumns] = useState([]);
   const [values, setValues] = useState([]);
 
-  console.log("columns", columns);
-
   return (
     <div className="bg-zinc-200 w-screen h-screen">
       <Header />

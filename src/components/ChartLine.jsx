@@ -19,10 +19,13 @@ export default function ChartLine({ data, typeChart }) {
     const voltageLabel = [];
 
     data.map((singleData) => {
+      console.log('singleData', singleData)
+      console.log('singleData 2', singleData[2])
+      console.log('singleData 3', singleData[3])
       hourLabel.push(singleData.Hora);
       dateLabel.push(singleData.Data);
-      radianceLabel.push(singleData["Irradiancia (W/m2)"]);
-      voltageLabel.push(singleData["Tensao Shunt (mV)"]);
+      radianceLabel.push(singleData["G (IFSC) [W/m²]"]);
+      voltageLabel.push(singleData["G (Sistema) [W/m²]"]);
     });
 
     setHour(hourLabel);
@@ -51,8 +54,8 @@ export default function ChartLine({ data, typeChart }) {
           display: true,
           text:
             typeChart == "radiance"
-              ? "Irradiancia (W/m²)"
-              : "Tensao Shunt (mv)",
+              ? "G (IFSC) [W/m²]"
+              : "G (Sistema) [W/m²]",
         },
       },
       x: {
