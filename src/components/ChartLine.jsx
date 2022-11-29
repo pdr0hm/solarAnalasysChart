@@ -19,9 +19,6 @@ export default function ChartLine({ data, typeChart }) {
     const voltageLabel = [];
 
     data.map((singleData) => {
-      console.log('singleData', singleData)
-      console.log('singleData 2', singleData[2])
-      console.log('singleData 3', singleData[3])
       hourLabel.push(singleData.Hora);
       dateLabel.push(singleData.Data);
       radianceLabel.push(singleData["G (IFSC) [W/m²]"]);
