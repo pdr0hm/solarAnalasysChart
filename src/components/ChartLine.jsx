@@ -21,8 +21,8 @@ export default function ChartLine({ data, typeChart }) {
     data.map((singleData) => {
       hourLabel.push(singleData.Hora);
       dateLabel.push(singleData.Data);
-      radianceLabel.push(singleData["G (IFSC) [W/m²]"]);
-      voltageLabel.push(singleData["G (Sistema) [W/m²]"]);
+      radianceLabel.push(singleData["G (IFSC) [W/m2]"]);
+      voltageLabel.push(singleData["G (Sistema) [W/m2]"]);
     });
 
     setHour(hourLabel);
@@ -51,8 +51,8 @@ export default function ChartLine({ data, typeChart }) {
           display: true,
           text:
             typeChart == "radiance"
-              ? "G (IFSC) [W/m²]"
-              : "G (Sistema) [W/m²]",
+              ? "G (IFSC) [W/m2]"
+              : "G (Sistema) [W/m2]",
         },
       },
       x: {
