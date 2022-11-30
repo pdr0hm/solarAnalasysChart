@@ -7,7 +7,7 @@ export default function TableData({ parsedData, columns, values }) {
         <div className="flex flex-col bg-zinc-100 rounded-sm ml-6 h-[600px]">
           <div className="scrollbar scrollbar-thumb-zinc-300 scrollbar-track-gray-100 rounded-sm">
             <table className="border-collapse text-sm font-sans sh  adow-md">
-              <thead className="border-b">
+              <thead className="border-b sticky top-0">
                 <tr>
                   {columns.map((rows, index) => {
                     return (

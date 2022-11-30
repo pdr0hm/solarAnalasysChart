@@ -38,7 +38,7 @@ export default function ChartLine({ data }) {
         label: "G (IFSC)",
         data: radiance,
         fill: false,
-        backgroundColor: "#5a8251",
+        backgroundColor: "#8e0808",
         borderColor: "red",
         yAxisID: 'y',
       },
