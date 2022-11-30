@@ -25,9 +25,8 @@ function App() {
             values={values}
           />
         </div>
-        <div className="flex-col w-full">
-          <ChartLine data={parsedData} typeChart={"radiance"} />
-          <ChartLine data={parsedData} typeCHart={"voltage"} />
+        <div className="w-full mr-14">
+          <ChartLine data={parsedData} />
         </div>
       </div>
     </div>
