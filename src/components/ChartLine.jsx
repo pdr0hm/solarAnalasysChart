@@ -48,7 +48,7 @@ export default function ChartLine({ data }) {
         fill: false,
         backgroundColor: "#5a8251",
         borderColor: "#8CC640",
-        yAxisID: 'y1',
+        yAxisID: 'y',
       },
     ],
   };
@@ -56,17 +56,22 @@ export default function ChartLine({ data }) {
   const options = {
     scales: {
       y: {
+        max: 1000,
+        min: 0,
         title: {
           display: true,
+          text: 'G [W/m²]'
           
         },
+        
+
       },
       x: {
         title: {
           display: true,
           text: "Hora",
         },
-      },
+      },     
     },
   };
 
