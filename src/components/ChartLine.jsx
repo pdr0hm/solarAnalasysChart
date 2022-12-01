@@ -60,19 +60,45 @@ export default function ChartLine({ data }) {
         min: 0,
         title: {
           display: true,
-          text: 'G [W/m²]'
-          
+          text: 'G [W/m²]', 
+          font: {
+            size: 25
+          }         
+        },      
+        ticks: {
+          font:{
+            size: 15
+          }
         },
-        
+       
 
       },
       x: {
         title: {
           display: true,
           text: "Hora",
+          font: {
+            size: 25
+          }
         },
+        ticks: {
+          font:{
+            size: 15
+          },
+      }
       },     
-    },
+    },   
+      plugins: {
+        legend: {
+          labels: {
+            font: {
+              size: 20
+            }
+          }
+        }
+      }
+      
+    
   };
 
   return (
